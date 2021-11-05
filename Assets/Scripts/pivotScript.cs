@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Rodolfo León Gasca A01653185
+
 public class pivotScript : MonoBehaviour
 {
     public Transform pivot;

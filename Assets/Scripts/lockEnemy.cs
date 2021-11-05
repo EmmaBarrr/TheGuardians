@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
+//Rodolfo León Gasca A01653185
+
 public class lockEnemy : MonoBehaviour
 {
     public GameObject cam1, cam2;

@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
+//Rodolfo León Gasca A01653185
+
 public class PlayerMovementCC : MonoBehaviour
 {
+
+    public Material mat1;
+    public Material mat2;
+
+    bool isMagic = false;
     public CinemachineFreeLook cmfl;
-    public GameObject cam;
+    public GameObject cam, nelli, eandi;
     public bool isDead = false, jump, D;
     public float windforce, WindTime;
     float curWindTime;
@@ -17,7 +24,7 @@ public class PlayerMovementCC : MonoBehaviour
     CharacterController controller;
     Camera m_cam;
     Vector3 mov;
-    public Animator anim;
+    public Animator anim,anim2;
     lockEnemy lenem;
 
     public Transform pivolt, ownpivot;
@@ -28,21 +35,25 @@ public class PlayerMovementCC : MonoBehaviour
 
     void Start()
     {
+        ChangeDimension();
         curSpeed = moveSpeed;
         mov = Vector3.zero;
         FOVcm = 40;
         Hp = 3;
         controller = GetComponent<CharacterController>();
-        //anim = GetComponent<Animator>();
         m_cam = Camera.main;
         lenem = GetComponent<lockEnemy>();
     }
     private void Update()
     {
+        eandi.SetActive(isMagic);
+        nelli.SetActive(!isMagic);
         if (!D) { 
         anim.SetBool("Grounded", controller.isGrounded);
-        ownpivot.transform.position = this.transform.position;
+            anim2.SetBool("Grounded", controller.isGrounded);
+            ownpivot.transform.position = this.transform.position;
 
+        //Scroll Wheel Zoom
         /*
         if (Input.mouseScrollDelta.y != 0)
         {
@@ -52,6 +63,7 @@ public class PlayerMovementCC : MonoBehaviour
 
         FOVcm = Mathf.Clamp(FOVcm, minFOV, maxFOV);
         */
+
         cmfl.m_Lens.FieldOfView = FOVcm;
 
             if (!isDead)
@@ -63,12 +75,20 @@ public class PlayerMovementCC : MonoBehaviour
                     {
                         verticalVelocity = jumpForce;
                         anim.SetBool("Grounded", controller.isGrounded);
+                        anim2.SetBool("Grounded", controller.isGrounded);
                     }
                     if (Input.GetKeyDown("c"))
                     {
                         Debug.Log("Roll");
                         //anim.SetTrigger("Roll");
                         RollSpeed(3);
+
+                    }
+                    if (Input.GetKeyDown("q"))
+                    {
+                        Debug.Log("Roll");
+                        //anim.SetTrigger("Roll");
+                        ChangeDimension();
 
                     }
                 }
@@ -96,11 +116,13 @@ public class PlayerMovementCC : MonoBehaviour
                         PlayerModel.transform.rotation = Quaternion.Slerp(PlayerModel.transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
 
                         anim.SetFloat("Speed 0", 0);
+                        anim2.SetFloat("Speed 0", 0);
                     }
                     mov.x *= curSpeed;
                     mov.z *= curSpeed;
                     controller.Move(mov * Time.deltaTime);
                     anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
+                    anim2.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")));
                 }
                 else if (lenem.lo)
                 {
@@ -113,6 +135,9 @@ public class PlayerMovementCC : MonoBehaviour
                     anim.SetFloat("Speed", Input.GetAxis("Vertical"));
                     anim.SetFloat("Speed 0", Input.GetAxis("Horizontal"));
 
+                    anim2.SetFloat("Speed", Input.GetAxis("Vertical"));
+                    anim2.SetFloat("Speed 0", Input.GetAxis("Horizontal"));
+
                     mov.x *= curSpeed * 0.7f;
                     mov.z *= curSpeed;
                     controller.Move(mov * Time.deltaTime);
@@ -121,6 +146,21 @@ public class PlayerMovementCC : MonoBehaviour
             }
         }
 
+    }
+
+
+    public void ChangeDimension()
+    {
+        isMagic = !isMagic;
+        switch (isMagic)
+        {
+            case true:
+                RenderSettings.skybox = mat2;
+                break;
+            case false:
+                RenderSettings.skybox = mat1;
+                break;
+        }
     }
 
     public void Dialogue(bool d)
