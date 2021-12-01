@@ -11,10 +11,16 @@ public class LightingManager : MonoBehaviour
 
     //Variables
     [SerializeField, Range (0, 24)] private float TimeOfDay;
+    private void Start()
+    {
+        TimeOfDay = 12.4f;
+        TimeOfDay %= 24;
+        UpdateLighting(TimeOfDay / 24f);
+    }
 
     private void Update()
     {
-        if (Preset == null)
+        /*if (Preset == null)
             return;
 
         if (Application.isPlaying)
@@ -26,7 +32,27 @@ public class LightingManager : MonoBehaviour
         else
         {
             UpdateLighting (TimeOfDay / 24f);
+        }*/
+    }
+
+    public void SetTimeofDay(float t, bool s)
+    {
+        if (s)
+        {
+            TimeOfDay += t;
         }
+        else
+        {
+            TimeOfDay = t;
+        }
+        TimeOfDay %= 24;
+        UpdateLighting(TimeOfDay / 24f);
+        
+    }
+
+    public float getTimeOfDay()
+    {
+        return TimeOfDay;
     }
    
     private void UpdateLighting (float timePercent)

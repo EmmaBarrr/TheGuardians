@@ -2423,3 +2423,456 @@ Received Import Request.
 Start importing Assets/Characters/Tezcatlipoca/Texturas/Rojo.mat using Guid(2577f59e811f1024eb2c73ddf02c40fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183afff48cbe4d9ab24beb00be72fd22') in 0.010149 seconds 
   Import took 0.013001 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006677 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.881 seconds
+Domain Reload Profiling:
+	ReloadAssembly (881ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (715ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1790 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2380.
+Total: 2.738100 ms (FindLiveObjects: 0.185100 ms CreateObjectMapping: 0.059000 ms MarkObjects: 2.478400 ms  DeleteObjects: 0.014900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2193.366704 seconds.
+  path: Assets/Characters/Tezcatlipoca/Texturas/Cuerpa1.mat
+  artifactKey: Guid(f451308628e470345a241235cf7965aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Tezcatlipoca/Texturas/Cuerpa1.mat using Guid(f451308628e470345a241235cf7965aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6383e156437d4c77e49fb48feb9876') in 0.104202 seconds 
+  Import took 0.107812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.779876 seconds.
+  path: Assets/Characters/Erandi/Running.fbx
+  artifactKey: Guid(f4e3d39e2425e7b49ac0df11d4ed5bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Running.fbx using Guid(f4e3d39e2425e7b49ac0df11d4ed5bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667e5cf3fdf2d40738f31b9bebac0721') in 0.015016 seconds 
+  Import took 0.018212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.919638 seconds.
+  path: Assets/Characters/Erandi/Standing 2H Magic Area Attack 01.fbx
+  artifactKey: Guid(36fae5f3377d4924db575ba8625340c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Standing 2H Magic Area Attack 01.fbx using Guid(36fae5f3377d4924db575ba8625340c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332f5478dd5e1e2f445869e4bac6e1b3') in 0.007657 seconds 
+  Import took 0.010813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.154735 seconds.
+  path: Assets/Characters/Erandi/Standing React Small From Right.fbx
+  artifactKey: Guid(46c7d70a505b56d41a74fb5f5a05596a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Standing React Small From Right.fbx using Guid(46c7d70a505b56d41a74fb5f5a05596a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e82c84d2b71aa14b542effc0883313b') in 0.008408 seconds 
+  Import took 0.011448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 190.989951 seconds.
+  path: Assets/Characters/Erandi/Erandi.controller
+  artifactKey: Guid(56ac62c2fb93d754387126da7df1d268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Erandi.controller using Guid(56ac62c2fb93d754387126da7df1d268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedf0eeb0650aba3f9a80b09ec3e2360') in 0.008147 seconds 
+  Import took 0.011710 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006740 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Domain Reload Profiling:
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (717ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (280ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1790 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2383.
+Total: 3.516300 ms (FindLiveObjects: 0.295500 ms CreateObjectMapping: 0.094500 ms MarkObjects: 3.104500 ms  DeleteObjects: 0.020700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 750.963130 seconds.
+  path: Assets/Characters/Erandi/Standing 2H Magic Area Attack 02.fbx
+  artifactKey: Guid(38866c51fda3d2f4bb3586952a8263e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Standing 2H Magic Area Attack 02.fbx using Guid(38866c51fda3d2f4bb3586952a8263e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa508894748878a67da6e4b883965fa') in 0.032986 seconds 
+  Import took 0.037329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.815935 seconds.
+  path: Assets/Characters/Erandi/Standing 2H Magic Area Attack 02.fbx
+  artifactKey: Guid(38866c51fda3d2f4bb3586952a8263e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Standing 2H Magic Area Attack 02.fbx using Guid(38866c51fda3d2f4bb3586952a8263e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f922ce958ac454ce17b4d4143736ea') in 0.006803 seconds 
+  Import took 0.010490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.176067 seconds.
+  path: Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 01.fbx
+  artifactKey: Guid(2cd22758ac35ca64eb9e994aaf1b4a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 01.fbx using Guid(2cd22758ac35ca64eb9e994aaf1b4a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d9ca41d49af104e0edc30a19d47119') in 0.008169 seconds 
+  Import took 0.012446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.928627 seconds.
+  path: Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 02.fbx
+  artifactKey: Guid(455480ead69f4274e88c0b08a9d2d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 02.fbx using Guid(455480ead69f4274e88c0b08a9d2d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2784a4658b03e7681eed215960134a') in 0.007852 seconds 
+  Import took 0.011668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.224150 seconds.
+  path: Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 02.fbx
+  artifactKey: Guid(455480ead69f4274e88c0b08a9d2d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Erandi/Erandi_Standing 2H Magic Attack 02.fbx using Guid(455480ead69f4274e88c0b08a9d2d522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a93e61d32bbbb2d1276a02e2f11701') in 0.009200 seconds 
+  Import took 0.013706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.928501 seconds.
+  path: Assets/Characters/Nelly/NellyHurt.fbx
+  artifactKey: Guid(4da6b2c9e10889944bff551270668c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyHurt.fbx using Guid(4da6b2c9e10889944bff551270668c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccff6803059cfa08704f560b71975511') in 0.318570 seconds 
+  Import took 0.323893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Characters/Nelly/NellyMagicATK.fbx
+  artifactKey: Guid(da60dded65e5c6743923ac82a505f767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyMagicATK.fbx using Guid(da60dded65e5c6743923ac82a505f767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2c66a6150cf512300f86e6655836e9') in 0.194584 seconds 
+  Import took 0.199079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Characters/Nelly/NellyPhisicalATK.fbx
+  artifactKey: Guid(e7a985a93405b464ea499878a6a52f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyPhisicalATK.fbx using Guid(e7a985a93405b464ea499878a6a52f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fff6c609df0fd69d40f65a6d1f01569') in 0.192298 seconds 
+  Import took 0.196451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Characters/Nelly/NellyHurt1.fbx
+  artifactKey: Guid(97813fa73d0a51546afd0dcb2ce23750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyHurt1.fbx using Guid(97813fa73d0a51546afd0dcb2ce23750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1677e0af9f987d1d88b02a18197394f') in 0.189591 seconds 
+  Import took 0.193231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Characters/Nelly/NellyIdle.fbx
+  artifactKey: Guid(48b9913e07d754f49bdf203e1400d89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyIdle.fbx using Guid(48b9913e07d754f49bdf203e1400d89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6deebfdedf4f0cbdb163ce25468286e8') in 0.204118 seconds 
+  Import took 0.207999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Characters/Nelly/NellyRun.fbx
+  artifactKey: Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyRun.fbx using Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53a28b7f7fecb56c6c7f108ab1dd3e5') in 0.252144 seconds 
+  Import took 0.255342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Characters/Nelly/NellyJump.fbx
+  artifactKey: Guid(c91027b2b8b28324daaabbdbd14ef610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyJump.fbx using Guid(c91027b2b8b28324daaabbdbd14ef610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2dd92cf349c56e6a860cf4a5d59644') in 0.226254 seconds 
+  Import took 0.229658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.413421 seconds.
+  path: Assets/Characters/Nelly/Nelly.controller
+  artifactKey: Guid(5830ea9b783f68b4b91dd98aac2bcd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/Nelly.controller using Guid(5830ea9b783f68b4b91dd98aac2bcd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba08bf701deee3527b9baa719a2e57a') in 0.004469 seconds 
+  Import took 0.007816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.190581 seconds.
+  path: Assets/Characters/Nelly/NellyIdle.fbx
+  artifactKey: Guid(48b9913e07d754f49bdf203e1400d89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyIdle.fbx using Guid(48b9913e07d754f49bdf203e1400d89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12bb5fb474c9e34f70dded05b89defd3') in 0.235432 seconds 
+  Import took 0.238734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.988164 seconds.
+  path: Assets/Characters/Nelly/NellyHurt.fbx
+  artifactKey: Guid(4da6b2c9e10889944bff551270668c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyHurt.fbx using Guid(4da6b2c9e10889944bff551270668c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f4d33d5fe16fd9a5864d3c4fee637c') in 0.232383 seconds 
+  Import took 0.238043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.943176 seconds.
+  path: Assets/Characters/Nelly/NellyHurt1.fbx
+  artifactKey: Guid(97813fa73d0a51546afd0dcb2ce23750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyHurt1.fbx using Guid(97813fa73d0a51546afd0dcb2ce23750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a26e975e4e8d3bd39d1840d0496f49') in 0.230615 seconds 
+  Import took 0.234847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.163788 seconds.
+  path: Assets/Characters/Nelly/NellyJump.fbx
+  artifactKey: Guid(c91027b2b8b28324daaabbdbd14ef610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyJump.fbx using Guid(c91027b2b8b28324daaabbdbd14ef610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9285e252d7c0eb2fb49e66d418fda2') in 0.228057 seconds 
+  Import took 0.231759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.661898 seconds.
+  path: Assets/Characters/Nelly/NellyMagicATK.fbx
+  artifactKey: Guid(da60dded65e5c6743923ac82a505f767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyMagicATK.fbx using Guid(da60dded65e5c6743923ac82a505f767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a24979d7cfcb55c456f466bb0d244c') in 0.222723 seconds 
+  Import took 0.226019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.757150 seconds.
+  path: Assets/Characters/Nelly/NellyPhisicalATK.fbx
+  artifactKey: Guid(e7a985a93405b464ea499878a6a52f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyPhisicalATK.fbx using Guid(e7a985a93405b464ea499878a6a52f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ad34a1875b8aabb8038c5e322cd062') in 0.222026 seconds 
+  Import took 0.225255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.796649 seconds.
+  path: Assets/Characters/Nelly/NellyRun.fbx
+  artifactKey: Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyRun.fbx using Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4caf394141e194520ba9c86739afda') in 0.219214 seconds 
+  Import took 0.223772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.351798 seconds.
+  path: Assets/Characters/Nelly/NellyRun.fbx
+  artifactKey: Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/NellyRun.fbx using Guid(f8ccb5932f4f2c846b460c1c03d5d14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86d9c219a65bc96c3ca0fef36ae4a6e') in 0.213796 seconds 
+  Import took 0.218080 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.121 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1121ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (909ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1790 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 113.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2390.
+Total: 3.076300 ms (FindLiveObjects: 0.168400 ms CreateObjectMapping: 0.055700 ms MarkObjects: 2.800900 ms  DeleteObjects: 0.050600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 219.517638 seconds.
+  path: Assets/Characters/Nelly/Materials/Skirt1.png
+  artifactKey: Guid(204cdac29f2b12447b7fba04982c453a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/Materials/Skirt1.png using Guid(204cdac29f2b12447b7fba04982c453a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44964f17fd095f2f7b3fa66328700b3') in 0.035473 seconds 
+  Import took 0.039057 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006971 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.864 seconds
+Domain Reload Profiling:
+	ReloadAssembly (864ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (712ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (256ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1790 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 113.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2392.
+Total: 2.554200 ms (FindLiveObjects: 0.160200 ms CreateObjectMapping: 0.056900 ms MarkObjects: 2.321600 ms  DeleteObjects: 0.014700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 57.699807 seconds.
+  path: Assets/Characters/Nelly/Materials/Skirt.mat
+  artifactKey: Guid(6b6a2457d1c8f0d45923a749f4faca04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Nelly/Materials/Skirt.mat using Guid(6b6a2457d1c8f0d45923a749f4faca04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497451cf1358f41e6e691feb09fe7d2e') in 0.053612 seconds 
+  Import took 0.056761 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
