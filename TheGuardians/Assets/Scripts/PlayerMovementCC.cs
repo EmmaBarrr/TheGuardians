@@ -7,10 +7,11 @@ using Cinemachine;
 
 public class PlayerMovementCC : MonoBehaviour
 {
-    public PlayerMovementCC inst;
-    public LightingManager LM;
-    bool isChanging = false;
-    public bool isMagic = false;
+
+    public Material mat1;
+    public Material mat2;
+
+    bool isMagic = false;
     public CinemachineFreeLook cmfl;
     public GameObject cam, nelli, eandi;
     public bool isDead = false, jump, D;
@@ -32,11 +33,9 @@ public class PlayerMovementCC : MonoBehaviour
 
     float FOVcm;
 
-    bool canchange = true;
-
     void Start()
     {
-        inst = this;
+        ChangeDimension();
         curSpeed = moveSpeed;
         mov = Vector3.zero;
         FOVcm = 40;
@@ -72,7 +71,6 @@ public class PlayerMovementCC : MonoBehaviour
                 if (controller.isGrounded)
                 {
                     verticalVelocity -= Time.deltaTime;
-                    verticalVelocity = Mathf.Clamp(verticalVelocity, -1, 1000);
                     if (Input.GetKeyDown("space"))
                     {
                         verticalVelocity = jumpForce;
@@ -86,9 +84,8 @@ public class PlayerMovementCC : MonoBehaviour
                         RollSpeed(3);
 
                     }
-                    if (Input.GetKeyDown("q") && canchange)
+                    if (Input.GetKeyDown("q"))
                     {
-                        canchange = false;
                         Debug.Log("Roll");
                         //anim.SetTrigger("Roll");
                         ChangeDimension();
@@ -158,35 +155,12 @@ public class PlayerMovementCC : MonoBehaviour
         switch (isMagic)
         {
             case true:
-                LM.SetTimeofDay(12.4f, false);
+                RenderSettings.skybox = mat2;
                 break;
             case false:
-                LM.SetTimeofDay(1.1f, false);
+                RenderSettings.skybox = mat1;
                 break;
         }
-        StartCoroutine(ChangeDayOrNight(isMagic));
-    }
-
-    IEnumerator ChangeDayOrNight(bool t)
-    {
-        Debug.Log(LM.getTimeOfDay());
-        if (!t)
-        {
-            while (LM.getTimeOfDay() < 12)
-            {
-                LM.SetTimeofDay(2f,true);
-                yield return new WaitForSeconds(0.05f);
-            }
-        }
-        else if (t)
-        {
-            while (LM.getTimeOfDay() > 1)
-            {
-                LM.SetTimeofDay(2f,true);
-                yield return new WaitForSeconds(0.05f);
-            }
-        }
-        canchange = true;
     }
 
     public void Dialogue(bool d)

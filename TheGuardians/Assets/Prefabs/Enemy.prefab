@@ -10073,8 +10073,6 @@ MonoBehaviour:
   agent: {fileID: 0}
   Distance: 10
   target: {fileID: 6673550853758294005}
-  Normal: {fileID: 6673550853199378180}
-  Magic: {fileID: 6673550854031698245}
 --- !u!1001 &6673550853671686682
 PrefabInstance:
   m_ObjectHideFlags: 0

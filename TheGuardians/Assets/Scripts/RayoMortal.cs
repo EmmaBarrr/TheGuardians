@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RayoMortal : MonoBehaviour
 {
+    public Animator tezcatlipoca;
+
     void Start()
     {
         StartCoroutine(DestroyBullet());
@@ -17,6 +19,11 @@ public class RayoMortal : MonoBehaviour
             Destroy(col.gameObject);
             Destroy(this.gameObject);
         } 
+
+        if (col.gameObject.tag == "Tezca")
+        {
+            tezcatlipoca.SetBool("Dead", true);
+        }
     }
 
     IEnumerator DestroyBullet()

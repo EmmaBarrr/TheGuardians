@@ -11,6 +11,8 @@ public class Protect : MonoBehaviour
     public GameObject lightning;
     Animator animator;
 
+    public AudioSource spell;
+
    private void Awake()
    {
        animator = GetComponent<Animator>();
@@ -42,6 +44,7 @@ public class Protect : MonoBehaviour
         //Necesitamos saber qué instanciar
         //Instanciar en posición origen
         GameObject rayitoLanzado = Instantiate(lightning, Origin.transform.position, Origin.transform.rotation);
+        spell.Play();
         //agregarle al rigidbody de nuestro rayito una fuerza
         //rayitoLanzado.GetComponent<Transform>().rotation.x = 90f;
         rayitoLanzado.GetComponent<Rigidbody>().velocity=Origin.transform.forward *100; //AddForce  //forward  //up

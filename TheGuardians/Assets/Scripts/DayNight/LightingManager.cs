@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Emmanuel Barrios
+
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
 {
@@ -11,16 +13,10 @@ public class LightingManager : MonoBehaviour
 
     //Variables
     [SerializeField, Range (0, 24)] private float TimeOfDay;
-    private void Start()
-    {
-        TimeOfDay = 12.4f;
-        TimeOfDay %= 24;
-        UpdateLighting(TimeOfDay / 24f);
-    }
 
     private void Update()
     {
-        /*if (Preset == null)
+        if (Preset == null)
             return;
 
         if (Application.isPlaying)
@@ -32,27 +28,19 @@ public class LightingManager : MonoBehaviour
         else
         {
             UpdateLighting (TimeOfDay / 24f);
-        }*/
-    }
+        }
 
-    public void SetTimeofDay(float t, bool s)
-    {
-        if (s)
+       /* if (Input.GetKeyDown(KeyCode.Q) && Realities.mysticalWorld == false)
         {
-            TimeOfDay += t;
+            TimeOfDay += Time.deltaTime; // *0.004f para que un cuatro minutos reales equivalgan a 1 hora del juego
+            TimeOfDay %= 24; //Clamp between 0 - 24
+            UpdateLighting (TimeOfDay / 24f);
         }
         else
         {
-            TimeOfDay = t;
-        }
-        TimeOfDay %= 24;
-        UpdateLighting(TimeOfDay / 24f);
-        
-    }
-
-    public float getTimeOfDay()
-    {
-        return TimeOfDay;
+             TimeOfDay %= 12;
+            UpdateLighting (TimeOfDay / 24f);
+        }*/
     }
    
     private void UpdateLighting (float timePercent)
@@ -90,4 +78,5 @@ public class LightingManager : MonoBehaviour
             }
         }
     }
+
 }
