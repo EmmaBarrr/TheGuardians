@@ -54,7 +54,7 @@ public class PlayerMovementCC : MonoBehaviour
             ownpivot.transform.position = this.transform.position;
 
         //Scroll Wheel Zoom
-        /*
+        
         if (Input.mouseScrollDelta.y != 0)
         {
             FOVcm += Input.mouseScrollDelta.y;
@@ -62,7 +62,7 @@ public class PlayerMovementCC : MonoBehaviour
         }
 
         FOVcm = Mathf.Clamp(FOVcm, minFOV, maxFOV);
-        */
+        
 
         cmfl.m_Lens.FieldOfView = FOVcm;
 
