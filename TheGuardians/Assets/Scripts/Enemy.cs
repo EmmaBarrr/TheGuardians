@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent SmokeMonster;
     public float detectRadio;
     public GameObject target;
+    public GameObject aim;
     public Animator animMonster;
 
 
@@ -41,11 +42,11 @@ public class Enemy : MonoBehaviour
 
     public void FindTarget()
     {
-        float distance = Vector3.Distance(transform.position, target.transform.position);
+        float distance = Vector3.Distance(transform.position, aim.transform.position);
         if (distance < detectRadio)
         {
             animMonster.SetBool("Run", true);
-            SmokeMonster.destination = target.transform.position;
+            SmokeMonster.destination = aim.transform.position;
         }
         else
         {
