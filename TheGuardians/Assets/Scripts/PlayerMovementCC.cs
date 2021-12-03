@@ -8,10 +8,11 @@ using Cinemachine;
 public class PlayerMovementCC : MonoBehaviour
 {
 
-    public Material mat1;
-    public Material mat2;
+    public PlayerMovementCC inst;
+    public LightingManager LM;
+    bool isChanging = false;
+    public bool isMagic = false;
 
-    bool isMagic = false;
     public CinemachineFreeLook cmfl;
     public GameObject cam, nelli, eandi;
     public bool isDead = false, jump, D;
@@ -24,17 +25,19 @@ public class PlayerMovementCC : MonoBehaviour
     CharacterController controller;
     Camera m_cam;
     Vector3 mov;
-    public Animator anim,anim2;
+    public Animator anim, anim2;
     lockEnemy lenem;
 
     public Transform pivolt, ownpivot;
     public float rotationSpeed;
     public GameObject PlayerModel;
 
+    bool canchange = true;
     float FOVcm;
 
     void Start()
     {
+        inst = this;
         ChangeDimension();
         curSpeed = moveSpeed;
         mov = Vector3.zero;
@@ -71,6 +74,7 @@ public class PlayerMovementCC : MonoBehaviour
                 if (controller.isGrounded)
                 {
                     verticalVelocity -= Time.deltaTime;
+                    verticalVelocity = Mathf.Clamp(verticalVelocity, -1, 1000);
                     if (Input.GetKeyDown("space"))
                     {
                         verticalVelocity = jumpForce;
@@ -84,8 +88,9 @@ public class PlayerMovementCC : MonoBehaviour
                         RollSpeed(3);
 
                     }
-                    if (Input.GetKeyDown("q"))
+                    if (Input.GetKeyDown("q") && canchange)
                     {
+                        canchange = false;
                         Debug.Log("Roll");
                         //anim.SetTrigger("Roll");
                         ChangeDimension();
@@ -155,12 +160,35 @@ public class PlayerMovementCC : MonoBehaviour
         switch (isMagic)
         {
             case true:
-                RenderSettings.skybox = mat2;
+                LM.SetTimeofDay(12.4f, false);
                 break;
             case false:
-                RenderSettings.skybox = mat1;
+                LM.SetTimeofDay(1.1f, false);
                 break;
         }
+        StartCoroutine(ChangeDayOrNight(isMagic));
+    }
+
+    IEnumerator ChangeDayOrNight(bool t)
+    {
+        Debug.Log(LM.getTimeOfDay());
+        if (!t)
+        {
+            while (LM.getTimeOfDay() < 12)
+            {
+                LM.SetTimeofDay(2f, true);
+                yield return new WaitForSeconds(0.05f);
+            }
+        }
+        else if (t)
+        {
+            while (LM.getTimeOfDay() > 1)
+            {
+                LM.SetTimeofDay(2f, true);
+                yield return new WaitForSeconds(0.05f);
+            }
+        }
+        canchange = true;
     }
 
     public void Dialogue(bool d)
